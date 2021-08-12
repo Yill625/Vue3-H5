@@ -86,13 +86,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
-};
+<script lang="ts" setup>
+const msg = 1231
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
