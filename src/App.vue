@@ -2,7 +2,10 @@
   <img alt="Vue logo" src="./assets/logo.png" />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const a: number = '1'
+console.log(a)
+</script>
 
 <style lang="scss">
 #app {
