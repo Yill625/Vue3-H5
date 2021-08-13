@@ -1,4 +1,9 @@
-import { createApp } from 'vue'
+import { createApp, defineComponent } from 'vue'
 import App from './App.vue'
+import 'vant/es/button/style'
+import Button from 'vant/es/button'
+const app = createApp(App)
 
-createApp(App).mount('#app')
+app.component(Button.name, Button)
+
+app.mount('#app')
