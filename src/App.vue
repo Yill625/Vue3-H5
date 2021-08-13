@@ -1,8 +1,11 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  {{ a }}
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const a: number = 1
+</script>
 
 <style lang="scss">
 #app {

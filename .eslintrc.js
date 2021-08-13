@@ -1,12 +1,21 @@
 module.exports = {
   root: true,
+
   env: {
     node: true
   },
-  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/prettier'],
+
+  extends: [
+    'plugin:vue/vue3-essential',
+    'eslint:recommended',
+    '@vue/prettier',
+    '@vue/typescript'
+  ],
+
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
+
   rules: {
     'prettier/prettier': [
       'error',
