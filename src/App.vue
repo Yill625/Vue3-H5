@@ -1,6 +1,11 @@
 <template>
+  <router-link to="/test">跳转test页面</router-link>
   <van-config-provider :theme-vars="themeVars">
-    <router-view />
+    <router-view v-slot="{ Component, route }">
+      <transition :name="route.meta.transition">
+        <component :is="Component" class="app-view"></component>
+      </transition>
+    </router-view>
   </van-config-provider>
 </template>
 
