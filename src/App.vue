@@ -3,7 +3,7 @@
   <van-config-provider :theme-vars="themeVars">
     <router-view v-slot="{ Component, route }">
       <transition :name="route.meta.transition">
-        <component :is="Component" class="app-view"></component>
+        <component :is="Component"></component>
       </transition>
     </router-view>
   </van-config-provider>

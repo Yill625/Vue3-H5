@@ -1,5 +1,5 @@
 <template>
-  <div v-if="show">
+  <div v-if="show" class="test">
     <van-button
       round
       type="primary"
@@ -19,3 +19,8 @@ onBeforeRouteLeave(() => {
   show.value = false
 })
 </script>
+<style lang="scss">
+.test {
+  height: 100px;
+}
+</style>
